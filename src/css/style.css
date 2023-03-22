@@ -1,0 +1,361 @@
+/* плашка в хедере с фиксированой позицией*/
+.header-back{
+   
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+  
+}
+
+strong{
+    font-weight:lighter;
+}
+.header{
+    height:50px;
+    align-items: center; 
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+
+    
+   
+}
+
+
+.phone span{
+    color: #fff;
+   font-size: 16px;
+   margin: auto 0px;
+    
+    
+}
+.phone a{
+    color:black;
+    padding:5px 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.style-a{
+    color: var(--white);
+    font-size: 1.6rem;
+    opacity: 0.8;
+}
+.style-a-active{
+    color:rgb(239, 68, 68);
+}
+.label-screen, .btn-screen{
+    display:none;
+}
+
+/* .label-menu{
+    content:;
+} */
+
+/* --------------------------------------- */
+
+/* первый экран */
+.background{
+    background: url(../img/fon.jpg);
+    display: flex;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: black;
+     
+
+}
+.about-us{
+    width: calc(100% / 2 );
+}
+.about-us > h1{
+    margin-top: 0;
+}
+.about-us > p {
+    color: #fffe;
+    font-weight: 200;
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.about__us__phone{
+    list-style: none;
+    color: #fffe;
+    font-weight: 200;
+    line-height: 25px;
+    font-size: 16px;
+
+}
+.about__us__phone:hover{
+    color:rgb(239, 68, 68);
+
+}
+
+.content{
+    margin:10rem 0;
+    justify-content: space-between;
+
+
+}
+/* форма заказа звонка */
+.from-feedback{
+    padding: 15px;
+    border: 1px solid gray;
+    overflow: hidden;
+    width: 320px;
+    position: relative;
+}
+
+.form-feedback-send::after{
+    content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   z-index: 0;
+}
+.send{
+    position: relative;
+}
+
+.send-load::after{
+    content: "";
+   background:url(../img/1495.gif) no-repeat;
+   position: absolute;
+   top: 41%;
+   left: 39%;
+   width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.send-ok::after{
+    content: "";
+   background:url(../img/mark.png) no-repeat;
+   position: absolute;
+   top: 43%;
+   left: 43%;
+   width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.send-lose::after{
+    content: "";
+   background:url(../img/marklose.png) no-repeat;
+   position: absolute;
+   top: 47%;
+   left: 44%;
+   width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+
+
+.name, .phone-form{
+    padding:0.5rem 2rem;
+    box-sizing: border-box;
+    margin:1rem 0;
+    font-size: 1.6rem;
+    width:100%;
+}
+
+.inp{
+    padding:0.5rem 2rem;
+    box-sizing: border-box;
+    margin:1rem 0;
+    border: 1px solid var(--bodycolor)
+}
+
+.btn{
+    padding: 1rem;
+    border: 2px solid var(--bodycolor);
+    margin: 1rem 0;
+    text-align: center;
+    cursor:pointer;
+    background-color: transparent;
+    color:#fff;
+    opacity: 0.5;
+    width:100%;
+    font-size:1.6rem;
+    transition: opacity 0.3s;
+}
+    .error{
+        color:rgb(239, 68, 68);
+        height: 13px;
+    }
+.btn:hover{
+    opacity:1;
+}
+
+.width{
+width:calc(100% / 2 - 4rem);
+}
+.about-us > h1{
+    color: #ffe;
+    opacity: 0.8;
+    font-size: 4rem;
+}
+
+form  span, form div {
+    color:#ffe;
+    font-size: 1.3rem
+}
+.btn__call, .popup__close{
+    display: none;
+    
+}
+/* ------------------------------------ */
+
+/* контент о преимущетсвах */
+.box-content{
+justify-content: space-between;
+align-items:flex-start;
+
+}
+
+div.benefit > div > p {
+    padding: 10px 0;
+    
+}
+.benefit-flex{
+    display: flex;
+}
+.benefit-flex img{
+    width: 40px;
+    height: 40px;
+    margin: auto 10px auto 0;
+}
+.title > p{
+    /* color: black; */
+    font-weight: 300;
+    line-height: 22px;
+    text-align: justify;
+
+
+}
+
+/* добваление полоски с стрелкой  */
+.arrow , .arrow-bottom {
+	/* /* width: 300px; */
+	margin-bottom: 10px;
+	position: relative;
+	background: #fff;
+	border-bottom: 1px solid green;
+    text-align: justify;
+}
+.arrow:after, .arrow:before {
+	content: ""; 
+	border: solid transparent;
+	position: absolute;
+ 	top: 100%;
+	left: 50%;
+    z-index: 0;
+}
+.arrow:after {
+	border-top-color: #fff;
+	border-width: 8px;
+	margin-left: -8px;
+}
+.arrow:before {
+	border-top-color: green;
+	border-width: 9px;
+	margin-left: -9px;
+}
+/* ------------------- */
+
+
+/* карточки с услугами */
+section.container > h2{
+    text-align: center;
+    
+
+}
+.benefit-centr{
+    text-align: center;
+}
+.box-price{
+    justify-content: space-between;
+    width: calc(100% / 3 - 4rem);
+    margin-top: 2rem;
+}
+.card{
+    border:2px solid grey;
+     box-shadow: 5px 5px 5px grey;
+     font-size: 16px;
+     text-align: center;
+}
+
+.margin-price{
+    margin:4rem 0;
+}
+
+
+/* футер с контактами */
+
+.footer-background{
+background-color: black;
+}
+
+.footer-jastifay{
+    vertical-align: middle;
+
+}
+.footer-width{
+    width: calc(100% / 2 - 2rem);
+    justify-content: space-between;
+}
+.footer-logo{
+    font-size: 2rem;
+    margin:2rem;
+
+    
+
+    
+}
+.footer-contakt{
+    font-size: 2rem;
+    color: var(--bodycolor);
+}
+.footer-contakt:hover{
+    color:rgb(239, 68, 68);
+
+}
+
+.kontakt{
+    font-size: 2rem;
+    margin:2rem 0;
+    
+}
+.kontakt-margin{
+    margin:1rem 0;
+
+}
+.kontakt-margin-bottom{
+    margin-bottom: 1rem;
+}
+.margin-top{
+    margin-top:7rem;
+}
+.brand{
+    text-align: right;
+}
+.brand > a{
+    font-size: 1.5rem;
+    color: var(--bodycolor);
+}
+.brand > a::after{
+  content: "\00A9";
+}
+.brand > a:hover{
+    
+    color:rgb(239, 68, 68);
+}
+/* ------------------------- */
+
+

@@ -1,0 +1,79 @@
+:root{
+    --green: #1D9D73;
+    --white: #fff;
+    --grey: #333;
+    --bodycolor: #888;
+} 
+html{
+    font-size: 10px;
+}
+
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: var(--bodycolor)
+}
+
+h1,h2,h3, .h1, .h2, .h3{
+    font-weight: 300;
+    color: var(--grey)
+}
+
+h1, .h1{
+    font-size:5.5rem;
+    margin: 3rem 0;
+}
+h2, .h2{
+    font-size: 3.6rem;
+    margin: 2rem 0;
+}
+
+h3, .h3{
+    font-size: 2.6rem;
+    margin: 3rem 0;
+}
+.colorGreen{
+    color: var(--green)
+
+}
+.colorWhite{
+    color: var(--white)
+}
+p{
+    font-weight: 300;
+    margin: 1.6rem 0;
+    font-size: 16px;
+    
+}
+
+a, span{
+    
+    font-weight: 300;
+    font-size: 1.3rem;
+    
+}
+strong, .strong{
+    font-weight: 400;
+}
+
+em, .em{
+    font-weight: 300;
+    font-style: italic;
+}
+.container{
+	max-width: 1366px;
+	margin: 0 auto;
+	padding: 0 4rem;}
+
+.row{
+    margin: 0 -2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+	margin-left: 2rem;
+	margin-right: 2rem;
+	box-sizing: border-box;
+}
